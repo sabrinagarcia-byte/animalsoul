@@ -25,7 +25,8 @@
 
 body {
     background: var(--white);
-    color: var(--white);
+    color: var(--black);
+  
 }
 
 /* ---------- HEADER ---------- */
@@ -97,20 +98,45 @@ nav a:hover {
     align-items: flex-start;
     gap: 30px;
     padding: 60px 20px;
-    flex-wrap: wrap;
+    background-image:url(../img/fundo.jpg) ;
+    background-size: cover;
 }
 
-.login-box .signup-box {
-    background-color: var(--gradienteAzul);
+.boxbox {
+    display: flex;
+    gap: 40px;
+}
+
+.login-box {
+    background: var(--white);
     padding: 30px 40px;
     border-radius: 15px;
-    width: 360px;
+    width: 450px;
     box-shadow: 0 4px 15px var(--black);
 }
 
+.text input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-size: 14px;
+    border: 1px solid var(--black);
+}
+
+.text input:hover {
+    background: var(--caixa);
+}
+
+
 .signup-box {
     background: var(--nav);
-    color: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    width: 650px;
+    box-shadow: 0 4px 15px var(--black);
+    color: var(--white);
 }
 
 h2 {
@@ -118,7 +144,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-input, select, button {
+.cadastro input, select, button {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
@@ -162,10 +188,26 @@ button {
     color: var(--black);
 }
 
-.birth .gender {
+.birth {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+}
+
+.container-gender {
+    margin-top: 10px ;
+    display: flex;
+    gap: 20px;
+}
+
+.gender {
+    display: flex;
+    gap: 10px;
+
+}
+
+.container h4 {
+    margin-top: 20px;
 }
 
 .terms {
@@ -190,5 +232,96 @@ button {
 
 .btn:hover {
     background-color: var(--black);
+}
+
+.btn2  {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 135px;
+}
+
+
+.rodape {
+    background: var(--nav);
+    color: var(--white);
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.logo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-area img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.logo-area h3 {
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.links-centro ul,
+.links-direita ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.links-centro a,
+.links-direita a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.9em;
+    display: block;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.links-centro a:hover,
+.links-direita a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--white);
+    margin: 20px 0;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.redes-sociais img {
+    width: 35px;
+    height: 35px;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.1);
 }
 

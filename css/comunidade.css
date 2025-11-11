@@ -2,6 +2,7 @@
     --nav: #000080;
     --header: #0d1b2a;
     --ciano: #4fc3f7;
+    --selecao: rgb(220, 231, 235);
     --white: #fff;
     --black: #000;
     --data: #777;
@@ -194,9 +195,12 @@ textarea {
 .actions .icons img {
     margin-right: 10px;
     color: var(--nav);
-    font-size: 20px;
     cursor: pointer;
     height: 35px;
+}
+
+.actions .icons img:hover {
+    transform: scale(1.1);
 }
   
 .actions button {
@@ -249,20 +253,24 @@ textarea {
   
 .comentario {
     background: var(--caixa);
-    padding: 25px 30px;
+    padding: 15px 30px;
     border-radius: 8px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     box-shadow: 0 0 10px var(--cinza);
+}
+
+.comentario:hover {
+    background-color: var(--selecao);
 }
   
 .usuario {
+    display: flex;
     font-weight: 600;
     margin-bottom: 5px;
     align-items: center;
-    justify-content: center;
     color: var(--nav);
+    gap: 10px;
 }
- 
 .comentario span {
     display: block;
     color: gray;
@@ -302,11 +310,12 @@ textarea {
 }
   
 .card {
-    background: #f8f8f8;
+    background: var(--white);
     padding: 20px;
     border-radius: 10px;
     width: 150px;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    color: var(--nav);
 }
   
 .card img {
