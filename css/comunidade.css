@@ -26,8 +26,6 @@
  
 body {
     color: var(--black);
-    line-height: 1.7;
-    background-color: var(--white);
   }
   
   header {
@@ -64,38 +62,40 @@ body {
       color: var(--ciano);
   }
   
-  .actions {
+.actions {
       display: flex;
       align-items: center;
       gap: 10px;
-  }
+
+    }
   
   .actions input {
       padding: 6px 10px;
       border-radius: 20px;
       border: none;
       outline: none;
-  }
-  
-  .doar {
-      background: var(--gradienteSaibamais);
-      color: var(--white);
-      border: none;
-      border-radius: 20px;
-      padding: 6px 40px;
-      cursor: pointer;
-      font-weight: 600;
-      transition: 0.3s;
-  }
-  
-  .doar:hover {
-      background: var(--gradienteSaibamais);
-      color: var(--white);
-  }
-  
+}
+ 
+.doar {
+    background: var(--gradienteCinza);
+    color: var(--black);
+    border: none;
+    border-radius: 20px;
+    padding: 6px 40px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+   
+}
+
+.doar:hover {
+    background: var(--gradienteSaibamais);
+    color: var(--white);
+    box-shadow: 0 2px 25px var(--white);
+}
 .banner {
-  height: 100vh;
-  background-image: url(../img/bannerComunidade.jpg);
+  height: 80vh;
+  background-image: url(../img/Comunidade/bannerComunidade.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -110,23 +110,18 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding-top: 550px;
+    padding-top: 590px;
           
 }
   
 .search-box {
    background: var(--white);
-   padding: 25px 30px;
-   border-radius: 25px;
+   padding: 25px 10px;
+   border-radius: 50px;
    text-align: center;
-   width: 90%;
+   width: 60%;
    max-width: 600px;
    box-shadow: 0 2px 10px var(--black);
-}
-.search-box p {
-    font-size: 16px;
-    margin-bottom: 15px;
-    color: var(--black);
 }
   
 .input-group {
@@ -139,20 +134,51 @@ body {
     width: 80%;
     padding: 10px;
     border: 1px solid var(--caixa);
-    border-radius: 6px 0 0 6px;
+    border-radius: 20px;
 }
   
-.input-group button {
+.input-group .button  {
     border: none;
     background: var(--nav);
     padding: 10px 20px;
-    border-radius: 0 6px 6px 0;
+    border-radius: 20px;
     cursor: pointer;
+}
+
+.input-group .button:hover {
+    background: var(--gradienteAzul);
+    box-shadow: 0 2.5px 15px var(--black);
 }
 
 .input-group img {
     height: 20px;
     width: 20px;
+}
+
+.foot {
+    background-color: rgb(2, 2, 119);
+    display: flex;
+    justify-content: center;
+
+}
+
+.box-foot {
+    display: flex;
+    padding: 25px;
+    width: 75%;
+    border-radius: 35px;
+    box-shadow: 0 0 10px var(--black);
+    position: relative;
+    height: 100px;
+    background-color: var(--nav);
+    justify-content: center;
+}
+
+.foot p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: var(--white);
+    text-align: center;
 }
   
 .postar {
@@ -203,7 +229,7 @@ textarea {
     transform: scale(1.1);
 }
   
-.actions button {
+.actions .publish {
     background: var(--nav);
     color: var(--white);
     border: none;
@@ -213,8 +239,10 @@ textarea {
     height: 35px;
 }
 
-.actions button:hover {
+.actions .publish:hover {
     opacity: 0.85;
+    background: var(--gradienteAzul);
+    box-shadow: 0 2.5px 15px var(--black);
 }
   
 .comentarios {
@@ -230,7 +258,7 @@ textarea {
 }
   
 .botao {
-    background: var(--nav);
+    background: var(--gradienteAzul);
     color: var(--white);
     border: none;
     padding: 10px 25px;
@@ -242,20 +270,20 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.botao img {
-    width: 25px;
+    box-shadow: 0 5px 25px var(--black);
 }
 .botao:hover {
     opacity: 0.85;
+    background: var(--gradienteCinza);
+    box-shadow: 0 5px 25px var(--black);
+    color: var(--black);
 }
   
 .comentario {
     background: var(--caixa);
-    padding: 15px 30px;
+    padding: 10px 20px;
     border-radius: 8px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     box-shadow: 0 0 10px var(--cinza);
 }
 
@@ -265,17 +293,16 @@ textarea {
   
 .usuario {
     display: flex;
-    font-weight: 600;
-    margin-bottom: 5px;
+    font-weight: 750;
     align-items: center;
     color: var(--nav);
-    gap: 10px;
+    gap: 15px;
 }
 .comentario span {
     display: block;
-    color: gray;
+    color: var(--black);
     font-size: 12px;
-    margin-top: 5px;
+    text-decoration: underline;
 }
 
 .comentario img {
@@ -294,14 +321,16 @@ textarea {
 
 .btn-answer:hover {
     opacity: 0.85;
+    background: var(--gradienteCinza);
+    box-shadow: 0 5px 15px var(--black);
+    color: var(--black);
 }
-
 
 .sugestoes {
     text-align: center;
     margin-bottom: 40px;
+    color: var(--nav);
 }
-  
 .cards {
     display: flex;
     justify-content: center;
@@ -316,6 +345,12 @@ textarea {
     width: 150px;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
     color: var(--nav);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: var(--nav);
+    color: var(--white);
 }
   
 .card img {
@@ -336,6 +371,9 @@ textarea {
 
 .card button:hover {
     opacity: 0.85;
+    background: var(--gradienteCinza);
+    color: var(--black);
+    box-shadow: 0 5px 15px var(--white);
 }
   
 .rodape {

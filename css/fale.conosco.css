@@ -78,6 +78,7 @@ nav a:hover {
 
 .doar {
     background: var(--gradienteCinza);
+    color: var(--black);
     border: none;
     border-radius: 20px;
     padding: 6px 40px;
@@ -87,13 +88,14 @@ nav a:hover {
 }
 
 .doar:hover {
-    background: var(--ciano);
+    background: var(--gradienteSaibamais);
     color: var(--white);
+    box-shadow: 0 2px 15px var(--white);
 }
 
 /* ---------- HERO SECTION ---------- */
 .hero {
-    background: url(../img/arara.png) center/cover no-repeat;
+    background: url(../img/FaleConosco/bannerFaleConosco.jpg) center/cover no-repeat;
     height: 50vh;
     position: relative;
 }

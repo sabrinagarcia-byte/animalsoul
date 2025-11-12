@@ -79,6 +79,7 @@ nav a:hover {
 
 .doar {
     background: var(--gradienteCinza);
+    color: var(--black);
     border: none;
     border-radius: 20px;
     padding: 6px 40px;
@@ -88,8 +89,9 @@ nav a:hover {
 }
 
 .doar:hover {
-    background: var(--ciano);
+    background: var(--gradienteSaibamais);
     color: var(--white);
+    box-shadow: 0 2px 15px var(--white);
 }
 
 /* ---------- HERO SECTION ---------- */

@@ -2,6 +2,7 @@
     --nav: #000080;
     --header: #0d1b2a;
     --ciano: #4fc3f7;
+    --selecao: #c9e7f5;
     --white: #fff;
     --black: #000;
     --data: #777;
@@ -138,9 +139,10 @@ nav a:hover {
     color: var(--white);
 }
 
-h2 {
+.login-box h2 {
     text-align: center;
     margin-bottom: 20px;
+    font-style: italic;
 }
 
 .cadastro input, select, button {
@@ -167,14 +169,26 @@ button {
     border: 1px solid var(--white);
 }
 
+.google-btn:hover {
+    background-color: var(--selecao);
+}
+
 .facebook-btn {
     background-color: var(--caixa);
     border: 1px solid var(--white);
 }
 
+.facebook-btn:hover {
+    background-color: var(--selecao);
+}
+
 .x-btn {
     background-color: var(--caixa);
     border: 1px solid var(--white);
+}
+
+.x-btn:hover {
+    background-color: var(--selecao);
 }
 
 .divider {
@@ -205,6 +219,14 @@ button {
 
 }
 
+.signup-box h2 {
+    color: var(--white);
+    font-weight: lighter;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .container h4 {
     margin-top: 20px;
 }
@@ -229,7 +251,7 @@ button {
 }
 
 .btn:hover {
-    background-color: var(--black);
+    background: var(--black);
 }
 
 .btn2  {
@@ -238,6 +260,13 @@ button {
     justify-content: center;
     align-items: center;
     margin-left: 135px;
+    background-color: var(--cinza);
+    color: var(--black);
+}
+
+.btn2:hover {
+    background: var(--gradienteCinza);
+    color: var(--nav);
 }
 
 /*RODAPÉ*/
