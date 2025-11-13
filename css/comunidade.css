@@ -75,6 +75,52 @@ body {
       border: none;
       outline: none;
 }
+
+
+/* ===== CAIXA DE SELEÇÃO ===== */
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gradienteCinza);
+    border-radius: 8px;
+    padding: 3px 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.language-selector:hover {
+    background: var(--gradienteSaibamais);
+    color: var(--black);
+    box-shadow: 0 2px 15px var(--white);
+}
+  
+.lang-icon {
+    font-size: 1.3rem;
+    color: var(--black);
+    transition: color 0.3s;
+}
+  
+.language-selector:hover .lang-icon {
+    background: var(--gradienteCinza);
+}
+  
+.lang-select {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+    color: var(--black);
+    font-size: 0.95rem;
+    cursor: pointer;
+    padding: 3px 6px;
+    border-radius: 6px;
+    width: 60px;
+}
+  
+.language-selector:hover .lang-select {
+    color: var(--white);
+}
  
 .doar {
     background: var(--gradienteCinza);

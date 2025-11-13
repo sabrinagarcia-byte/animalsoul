@@ -15,7 +15,7 @@
     </div>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Página inicial</a></li>
             <li><a href="animais.em.destaque.html">Animais em destaque</a></li>
             <li><a href="sobre.nos.html">Sobre nós</a></li>
             <li><a href="comunidade.html">Comunidade</a></li>
@@ -24,6 +24,14 @@
     </nav>
     <div class="actions">
       <input type="text" placeholder="Buscar">
+       <!-- Seletor de idioma -->
+       <div class="language-selector">
+        <ion-icon name="globe-outline" class="lang-icon"></ion-icon>
+        <select class="lang-select" onchange="location = this.value;">
+          <option value="comunidade.html" selected>BR</option>
+          <option value="comunidade-en.html">EN</option>
+        </select>
+      </div>
       <a href="cadastre-se.html"><button class="doar">Fazer login</button></a>
     </div>
 </header>
