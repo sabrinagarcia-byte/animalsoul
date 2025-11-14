@@ -17,65 +17,64 @@
     font-size: 100%;
 }
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
+    font-family: "Poppins", sans-serif;
+  }
+ 
 body {
-    background: var(--white);
     color: var(--black);
+  }
   
-}
-
-/* ---------- HEADER ---------- */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--nav);
-    padding: 10px 40px;
-    flex-wrap: wrap;
-}
-
-.logo img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--white);
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: var(--ciano);
-}
-
+  header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--nav);
+      padding: 10px 40px;
+      flex-wrap: wrap;
+  }
+  
+  .logo img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+  }
+  
+  nav ul {
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+  
+  nav a {
+      text-decoration: none;
+      color: var(--white);
+      font-weight: 500;
+      transition: 0.3s;
+  }
+  
+  nav a:hover {
+      color: var(--ciano);
+  }
+  
 .actions {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+      display: flex;
+      align-items: center;
+      gap: 10px;
 
-.actions input {
-    padding: 6px 10px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
+    }
+  
+  .actions input {
+      padding: 6px 10px;
+      border-radius: 20px;
+      border: none;
+      outline: none;
 }
 
 
@@ -123,9 +122,10 @@ nav a:hover {
 .language-selector:hover .lang-select {
     color: var(--white);
 }
-
+ 
 .doar {
     background: var(--gradienteCinza);
+    color: var(--black);
     border: none;
     border-radius: 20px;
     padding: 6px 40px;
@@ -135,8 +135,9 @@ nav a:hover {
 }
 
 .doar:hover {
-    background: var(--ciano);
+    background: var(--gradienteSaibamais);
     color: var(--white);
+    box-shadow: 0 2px 25px var(--white);
 }
 
 .container {

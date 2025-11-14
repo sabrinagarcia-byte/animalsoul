@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doar2</title>
+    <link rel="stylesheet" href="css/doar2.css" />
+    <link rel="shortcut icon" href="img/favicon_io (2)/favicon.ico" type="image/x-i">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo Pinguim" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="animais.em.destaque.html">Animais em destaque</a></li>
+          <li><a href="sobre.nos.html">Sobre nós</a></li>
+          <li><a href="comunidade.html">Comunidade</a></li>
+          <li><a href="fale.conosco.html">Fale conosco</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+      <input type="text" placeholder="Buscar">
+       <!-- Seletor de idioma -->
+        <div class="language-selector">
+          <ion-icon name="globe-outline" class="lang-icon"></ion-icon>
+          <select class="lang-select" onchange="location = this.value;">
+            <option value="doar.html" selected>BR</option>
+            <option value="doar-en.html">EN</option>
+          </select>
+        </div>
+    </div>
+    </header>
+    
+    <main>
+      <div class="container">
+        <div class="image">
+          <img src="img/doar2/pinguin.png" alt="Pinguins na praia" />
+        </div>
+
+        <div class="form-box">
+          <h2>Faça parte da mudança na vida<br />de muitas espécies</h2>
+          <form>
+           <h3>Escolha a forma de pagamento:</h3>
+            <button class="pag" type="pagar"><img src="img/doar2/boleto icon.png"/>Boleto</button>
+            <button class="pag" type="pagar"><img src="img/doar2/pix icon.png">Pix</button>
+            <button class="pag" type="pagar"><img src="img/doar2/cartao ico n.png">Cartão</button>
+            <button class="concluido" type="submit">Concluído!</button>
+          </form>
+
+          <div class="steps">
+            <div class="step"><img src="img/doar2/1.png"><br /><span>Dados pessoais</span></div>
+            <div class="step "><img src="img/doar2/2.png"><br><span>Dados de pagamento</span></div>
+            <div class="step"><img src="img/doar2/3.png"><br><span>Finalizar</span></div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
