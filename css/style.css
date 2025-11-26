@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --nav: #000080;
     --header: #0d1b2a;
@@ -44,6 +45,47 @@ header {
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+
+/*Menu mobile*/
+#mobileMenu {
+    position: absolute;
+    top: 85px;
+    right: 20px;
+    width: 240px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 1.2rem 1rem;
+    opacity: 0;
+    transform: translateY(-15px);
+}
+
+#mobileMenu li {
+    width: 100%;
+    border-bottom: 1px solid #d1d5db;
+    padding: 0.6rem 0;
+}
+
+#mobileMenu li:last-child {
+    border-bottom: none;
+}
+
+#mobileMenu a:hover {
+    border-bottom: none !important;
+    transform: translateX(4px);
+    text-decoration: none;
+}
+
+/*quando o JS ativar*/
+#mobileMenu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 nav ul {
@@ -137,6 +179,21 @@ nav a:hover {
     background: var(--gradienteSaibamais);
     color: var(--white);
     box-shadow: 0 2px 15px var(--white);
+}
+
+
+.navbar_toggle {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+}
+
+.navbar_toggle ion-icon:hover {
+    color: var(--seconday-color);
 }
 
 /* ---------- HERO SECTION ---------- */
@@ -490,4 +547,146 @@ hr {
 
 .redes-sociais img:hover {
     transform: scale(1.1);
+}
+
+/*RESPONSIVIDADE*/
+/*
+@media (max-width: 992px) {
+    .navbar_toggle {
+        display: flex;
+        gap: 30px;
+        font-size: 2rem;
+    }
+
+    esconder menu tradicional 
+    header nav ul {
+        display: none !important;
+    }
+
+     ajustar ações (busca, idioma, doar) 
+    .actions input {
+        display: none; /* some no mobile 
+    }
+
+    .actions {
+        margin-left: auto;
+        gap: 10px;
+    }
+}*/
+
+/*  (576px) 
+@media (max-width: 576px) {
+    
+    .navbar_toggle {
+        display: flex;
+        font-size: 2rem;
+    }
+
+}
+
+/* (430px ) 
+@media (max-width: 430px) {
+
+}
+*/
+
+/* ============================
+   HAMBURGUER MENU (MESMOS NOMES)
+============================ */
+
+#menu-toggle {
+    display: none;
+}
+
+/* Ícone */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: var(--white);
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+/* ======================================
+   RESPONSIVIDADE ATÉ 992px
+====================================== */
+@media (max-width: 992px) {
+
+    /* Mostrar hambúrguer */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Esconder menu normal */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: var(--nav);
+        padding: 20px 0;
+    }
+
+    /* Mostrar input hamburguer aberto */
+    #menu-toggle:checked ~ nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    /* Esconder campo de busca do mobile */
+    .actions input {
+        display: none;
+    }
+
+    /* Animação do hambúrguer virando X */
+    #menu-toggle:checked + .hamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    #menu-toggle:checked + .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked + .hamburger span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+}
+
+/* ======================================
+   576px para baixo (ajustes finos)
+====================================== */
+@media (max-width: 576px) {
+
+    .hamburger span {
+        width: 24px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
+
+/* ======================================
+   430px para baixo
+====================================== */
+@media (max-width: 430px) {
+
+    .hamburger span {
+        width: 22px;
+    }
 }
