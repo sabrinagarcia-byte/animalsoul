@@ -151,7 +151,7 @@ nav a.ativo {
 }
   
 .language-selector:hover .lang-icon {
-    background: var(--gradienteCinza);
+    background: transparent;
 }
   
 .lang-select {

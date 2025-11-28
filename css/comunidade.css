@@ -150,7 +150,7 @@ nav a.ativo {
 }
   
 .language-selector:hover .lang-icon {
-    background: var(--gradienteCinza);
+    background: transparent;
 }
   
 .lang-select {
@@ -203,7 +203,7 @@ nav a.ativo {
 }
 
 .banner {
-  height: 90vh;
+  height: 80vh;
   background-image: url(../img/Comunidade/bannerComunidade.jpg);
   background-size: cover;
   background-position: center;
@@ -220,8 +220,6 @@ nav a.ativo {
     align-items: flex-start;
     justify-content: center;
     padding-top: 590px;
-    margin-top: 150px;
-          
 }
   
 .search-box {
@@ -232,7 +230,7 @@ nav a.ativo {
    width: 80%;
    max-width: 800px;
    box-shadow: 0 2px 10px var(--black);
-   margin-top: 100px;
+   
 }
   
 .input-group {
@@ -288,7 +286,6 @@ nav a.ativo {
 
 .foot p {
     font-size: 16px;
-    margin-bottom: 15px;
     color: var(--white);
     text-align: center;
 }
@@ -297,7 +294,8 @@ nav a.ativo {
     display: flex;
     justify-content: center;
     margin: 30px 0;
-    padding: 280px;
+    padding: 200px;
+    margin-top: -100px;
 }
   
 .post-box {
@@ -307,7 +305,7 @@ nav a.ativo {
     border-radius: 35px;
     box-shadow: 0 0 10px var(--black);
     position: relative;
-    height: 220px;
+    height: 200px;
 }
 
   
