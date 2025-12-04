@@ -400,6 +400,6 @@ button {
 }
 
 .btn2:hover {
-    background: var(--gradienteCinza);
-    color: var(--nav);
+    background: var(--black);
+    color: var(--white);
 }

@@ -413,7 +413,6 @@ textarea {
     display: block;
     color: var(--black);
     font-size: 12px;
-    text-decoration: underline;
 }
 
 .comentario img {
@@ -569,3 +568,4 @@ hr {
 .redes-sociais img:hover {
     transform: scale(1.1);
 }
+

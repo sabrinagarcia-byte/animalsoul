@@ -149,6 +149,7 @@ nav a.ativo {
     color: var(--black);
     transition: color 0.3s;
 }
+
   
 .language-selector:hover .lang-icon {
     background: transparent;
@@ -168,7 +169,7 @@ nav a.ativo {
 }
   
 .language-selector:hover .lang-select {
-    color: var(--white);
+    color: var(--black);
 }
 
 .doar {
@@ -430,7 +431,7 @@ h1 span {
 
 .noticia:hover {
     background-color: var(--caixa);
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 .noticia img {
@@ -453,9 +454,6 @@ h1 span {
     margin-bottom: 10px;
 }
 
-.data:hover {
-    text-decoration: underline;
-}
 
 .botttao {
     display: inline-block;
@@ -528,7 +526,7 @@ h1 span {
 
 .links-centro a:hover,
 .links-direita a:hover {
-    text-decoration: underline;
+   text-decoration: underline;
 }
 
 hr {
