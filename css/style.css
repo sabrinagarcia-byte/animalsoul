@@ -16,7 +16,7 @@
     --caixa: #E9E9E9;
     --cinza: #B5B4B4;
 
-    -ff: 'Poppins';
+    --ff: 'Poppins';
     font-size: 100%;
 }
 
@@ -560,6 +560,27 @@ hr {
 
     .noticias-container {
         margin-top: -90px;
+    }
+}
+
+/*====== 1153px ========*/
+@media (max-width: 1153px) {
+    .navbar {
+        display: none;
+        list-style: none;
+    }
+    
+    
+    .navbar_toggle {
+        display: block;
+        color: var(--white);
+        margin-top: 7px;
+    }
+    
+    
+    #mobileMenu {
+        top: 105px;
+        right: 10px;
     }
 }
 
