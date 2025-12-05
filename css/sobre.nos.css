@@ -24,12 +24,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
 body {
     background: var(--white);
-    color: var(--header);
+    color: var(--black);
 }
 
 /* ---------- HEADER ---------- */
@@ -61,6 +60,8 @@ header {
     padding: 1.2rem 1rem;
     opacity: 0;
     transform: translateY(-15px);
+    background: var(--nav);
+    z-index: 10;
 }
 
 #mobileMenu li {
@@ -77,6 +78,7 @@ header {
     border-bottom: none !important;
     transform: translateX(4px);
     text-decoration: none;
+    color: var(--ciano);
 }
 
 /*quando o JS ativar*/
@@ -171,6 +173,21 @@ nav a.ativo {
     color: var(--white);
 }
 
+
+.navbar_toggle {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: var(--black);
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+}
+
+.navbar_toggle ion-icon:hover {
+    color: var(--ciano);
+}
+
 .doar {
     background: var(--gradienteCinza);
     color: var(--black);
@@ -186,21 +203,6 @@ nav a.ativo {
     background: var(--gradienteSaibamais);
     color: var(--white);
     box-shadow: 0 2px 15px var(--white);
-}
-
-
-.navbar_toggle {
-    font-size: 2rem;
-    border: none;
-    background: none;
-    color: var(--black);
-    cursor: pointer;
-    transition: 0.3s;
-    display: none;
-}
-
-.navbar_toggle ion-icon:hover {
-    color: var(--cinza);
 }
 
 /* ---------- HERO SECTION ---------- */
@@ -534,4 +536,279 @@ hr {
 
 .redes-sociais img:hover {
     transform: scale(1.1);
+}
+
+
+/* ====== 1440px ====== */
+@media (max-width: 1440px) {
+    header {
+        padding: 10px 40px !important;
+        gap: 10px !important;
+    }
+
+    nav {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .logo img {
+    width: 50px !important;
+    height: 50px !important;
+    }
+
+    .actions input {
+        gap: 10px !important;
+    }
+
+    .language-selector {
+        padding: 2px 4px !important;
+    }
+    
+/* Rodapé */
+.rodape {
+    padding: 25px 30px;
+}
+
+.rodape-conteudo {
+    gap: 30px;
+}
+
+.logo-area {
+    padding: 10px;
+}
+
+.logo-area img {
+    width: 55px;
+    height: 55px;
+}
+
+}
+
+/* ======= 1280px =======*/
+@media (max-width: 1280px) {
+header {
+    padding: 10px 40px !important;
+    gap: 10px !important;
+}
+nav {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+}
+
+/*====== 1024px ========*/
+@media (max-width: 1024px) {
+
+header {
+    padding: 10px 20px !important;
+    gap: 10px;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.logo img {
+    height: 65px;
+}
+
+.navbar {
+    display: none;
+    list-style: none;
+}
+
+
+.navbar_toggle {
+    display: block;
+    color: var(--white);
+    margin-top: 7px;
+}
+
+#mobileMenu {
+    top: 25px;
+    right: 10px;
+}
+
+.rodape {
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.logo-area img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.logo-area h3 {
+    font-size: 0.9em;
+}
+
+.links-centro ul,
+.links-direita ul {
+    padding: 10px;
+}
+
+.links-centro a,
+.links-direita a {
+    font-size: 0.88em;
+}
+
+.redes-sociais {
+    gap: 10px;
+}
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 10px !important;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 40px);
+        max-width: 300px;
+    }
+
+    .cards-equipe {
+        flex-wrap: wrap;
+    }
+
+    .Titulo h1 {
+        font-size: 1.4rem;
+    }
+
+    .texto p {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1px 10px !important;
+    }
+
+    .language-selector {
+        width: 95px;
+        height: 25px;
+    }
+
+    .lang-icon {
+        font-size: 1rem;
+    }
+
+    .actions input {
+        display: none;
+    }
+
+    .doar {
+       padding: 5px 25px;
+    }
+
+    #mobileMenu {
+        top: 100px;
+        right: 5px;
+       font-size: 0.7rem;
+       width: 200px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 2.2rem;
+    }
+
+    .titulo-secao p {
+        font-size: 1rem;
+    }
+
+    .card {
+        padding: 10px 20px;
+    }
+
+    .avatar {
+        width: 90px;
+        height: 90px;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+    }
+
+    .card p {
+        font-size: 0.8rem;
+    }
+
+    .rodape-conteudo {
+       justify-content: center;
+       margin-left: 55px;
+      }
+
+      .logo-area img {
+        height: 40px;
+        width: 40px;
+        
+      }
+
+      .logo-area h3 {
+        font-size: 0.8rem;
+      }
+
+      
+    .links-centro ul,
+    .links-direita ul {
+           display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    header {
+        padding: 1px 5px !important;
+    }
+
+    .doar {
+        padding: 5px 20px;
+    }
+
+    #mobileMenu {
+        top: 100px;
+        right: 5px;
+       font-size: 0.6rem;
+       width: 150px;
+       height: 250px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 1.8rem;
+    }
+
+    .titulo-secao p {
+        font-size: 0.9rem;
+    }
+
+    .avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    .cards-equipe {
+        display: grid;
+    }
+
+    .card p {
+        font-size: 0.7rem;
+    }
+
+    .texto p {
+        font-size: 0.8rem;
+    }
+
+    .rodape {
+        margin-top: -40px;
+    }
+
 }

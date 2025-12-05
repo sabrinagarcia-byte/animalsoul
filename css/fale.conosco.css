@@ -38,7 +38,6 @@ header {
     justify-content: space-between;
     background-color: var(--nav);
     padding: 10px 40px;
-    flex-wrap: wrap;
 }
 
 .logo img {
@@ -349,4 +348,202 @@ hr {
 
 .redes-sociais img:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+header {
+    padding: 3px 10px !important;
+    gap: 10px;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.logo img {
+    height: 35px;
+    width: 35px;
+}
+
+.navbar {
+    display: none;
+    list-style: none;
+}
+
+.navbar_toggle {
+    display: block;
+    color: var(--white);
+    margin-top: 7px;
+}
+
+#mobileMenu {
+    top: 115px;
+    right: 10px;
+}
+
+.rodape {
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.logo-area img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.logo-area h3 {
+    font-size: 0.9em;
+}
+
+.links-centro ul,
+.links-direita ul {
+    padding: 10px;
+}
+
+.links-centro a,
+.links-direita a {
+    font-size: 0.88em;
+}
+
+.redes-sociais {
+    gap: 10px;
+}
+}
+
+@media (max-width: 768px) {
+     header {
+        padding: 10px 10px !important;
+    }
+
+    .faleconosco p {
+        font-size: 0.9rem;
+    }
+
+    .final p {
+       font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1px 10px !important;
+    }
+
+    .language-selector {
+        width: 95px;
+        height: 25px;
+    }
+
+    .lang-icon {
+        font-size: 1rem;
+    }
+
+    
+    .actions input {
+        display: none;
+    }
+
+    .doar {
+       padding: 5px 25px;
+    }
+
+    #mobileMenu {
+        top: 100px;
+        right: 5px;
+       font-size: 0.7rem;
+       width: 200px;
+    }
+
+    .faleconosco h1 {
+        font-size: 1.3rem;
+    }
+
+    .faleconosco p {
+        font-size: 0.9rem;
+    }
+
+    .final p {
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+
+    .rodape {
+        margin-top: -30px;
+    }
+    
+      .rodape-conteudo {
+       justify-content: center;
+      }
+
+      .logo-area img {
+        height: 40px;
+        width: 40px;
+        
+      }
+
+      .logo-area h3 {
+        font-size: 0.8rem;
+      }
+
+      
+    .links-centro ul,
+    .links-direita ul {
+           display: none;
+    }
+
+    .redes-sociais img {
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    padding: 5px;
+
+}
+}
+
+@media (max-width: 390px) {
+      header {
+        padding: 1px 5px !important;
+    }
+
+    .lang-icon {
+        font-size: 1rem;
+    } 
+
+    .doar {
+        padding: 5px 20px;
+    }
+
+    #mobileMenu {
+        top: 100px;
+        right: 5px;
+       font-size: 0.6rem;
+       width: 150px;
+       height: 250px;
+    }
+    
+    .rodape-conteudo {
+       justify-content: center;
+      }
+
+      .logo-area img {
+        height: 40px;
+        width: 40px;
+        
+      }
+
+      .logo-area h3 {
+        font-size: 0.6rem;
+
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    padding: 5px;
+
+}
 }

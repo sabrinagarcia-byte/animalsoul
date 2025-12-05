@@ -56,7 +56,7 @@ header {
     top: 85px;
     right: 20px;
     width: 240px;
-    background: var(--white);
+    background: var(--nav);
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     padding: 1.2rem 1rem;
@@ -126,6 +126,7 @@ nav a.ativo {
     outline: none;
 }
 
+
 /* ===== CAIXA DE SELEÇÃO ===== */
 .language-selector {
     display: flex;
@@ -149,7 +150,6 @@ nav a.ativo {
     color: var(--black);
     transition: color 0.3s;
 }
-
   
 .language-selector:hover .lang-icon {
     background: transparent;
@@ -169,7 +169,7 @@ nav a.ativo {
 }
   
 .language-selector:hover .lang-select {
-    color: var(--black);
+    color: var(--white);
 }
 
 .doar {
@@ -189,7 +189,6 @@ nav a.ativo {
     box-shadow: 0 2px 15px var(--white);
 }
 
-
 .navbar_toggle {
     font-size: 2rem;
     border: none;
@@ -201,8 +200,9 @@ nav a.ativo {
 }
 
 .navbar_toggle ion-icon:hover {
-    color: var(--cinza);
+    color: var(--ciano);
 }
+
 
 /* ---------- HERO SECTION ---------- */
 .hero {
@@ -310,12 +310,6 @@ nav a.ativo {
     font-weight: bold;
 }
 
-.icone {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    filter: brightness(0), invert(1);
-}
 
 .foot {
     display: flex;
@@ -552,4 +546,337 @@ hr {
 
 .redes-sociais img:hover {
     transform: scale(1.1);
+}
+
+
+/* ======= 1280px =======*/
+@media (max-width: 1280px) {
+header {
+    padding: 10px 40px !important;
+    gap: 10px !important;
+}
+nav {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+}
+
+
+/*====== 1024px ========*/
+@media (max-width: 1024px) {
+
+header {
+    padding: 3px 10px !important;
+    gap: 10px;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.logo img {
+    height: 35px;
+    width: 35px;
+}
+
+.navbar {
+    display: none;
+    list-style: none;
+}
+
+.navbar_toggle {
+    display: block;
+    color: var(--white);
+    margin-top: 7px;
+}
+
+#mobileMenu {
+    top: 115px;
+    right: 10px;
+}
+
+/* ---------- DADOS SECTION ---------- */
+.dados {
+    padding: 20px 30px;
+}
+
+.categorias {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+}
+
+.item {
+    padding: 10px;
+}
+
+.foot {
+    margin-top: -70px;
+    gap: 10px;
+}
+
+.acao {
+    padding: 10px 18px;
+}
+
+
+.rodape {
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.logo-area img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.logo-area h3 {
+    font-size: 0.9em;
+}
+
+.links-centro ul,
+.links-direita ul {
+    padding: 10px;
+}
+
+.links-centro a,
+.links-direita a {
+    font-size: 0.88em;
+}
+
+.redes-sociais {
+    gap: 10px;
+}
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 10px !important;
+    }
+
+    .text-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+
+    .cta {
+        margin-bottom: 15px;
+    }
+
+.foot {
+    margin-top: 0;
+    gap: 10px;
+}
+
+.container h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.botttao {
+    padding: 3px 7px;
+}
+
+}
+
+
+@media (max-width: 480px) {
+    header {
+        padding: 1px 10px !important;
+    }
+
+    .language-selector {
+        width: 95px;
+        height: 25px;
+    }
+
+    .lang-icon {
+        font-size: 1rem;
+    }
+
+    
+    .actions input {
+        display: none;
+    }
+
+    .doar {
+       padding: 5px 25px;
+    }
+
+    #mobileMenu {
+        top: 100px;
+        right: 5px;
+       font-size: 0.7rem;
+       width: 200px;
+    }
+
+    
+      .rodape-conteudo {
+       justify-content: center;
+      }
+
+      .logo-area img {
+        height: 40px;
+        width: 40px;
+        
+      }
+
+      .logo-area h3 {
+        font-size: 0.8rem;
+      }
+
+      
+    .links-centro ul,
+    .links-direita ul {
+           display: none;
+    }
+
+    .foot {
+        gap: 10px;
+        text-align: right;
+        font-size: 0.9rem;
+    }
+
+    .acao {
+        padding: 7px 14px;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .autor {
+        font-size: 0.75rem;
+    }
+
+    .imagem img {
+        width: 60%;
+        align-items: center;
+    }
+
+    .texto {
+        font-size: 0.8rem;
+    }
+
+    .bottao {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    .noticia {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .noticia img {
+        width: 130px;
+        height: 80px;
+    }
+
+    .conteudo h2 {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 390px) {
+    header {
+        padding: 1px 5px !important;
+    }
+
+    .lang-icon {
+        font-size: 1rem;
+    } 
+
+    .doar {
+        padding: 5px 20px;
+    }
+
+    #mobileMenu {
+        top: 100px;
+        right: 5px;
+       font-size: 0.6rem;
+       width: 150px;
+       height: 250px;
+    }
+
+    .cta {
+        font-size: 0.8rem;
+        font-weight: 200;
+        padding: 7px 14px;
+    }
+
+    .dados {
+    padding: 10px 20px;
+}
+
+.categorias {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+
+}
+
+.item {
+    padding: 5px;
+}
+
+.foot {
+margin-bottom: 10px;
+        font-size: 0.75rem;
+        text-align: right;
+    }
+
+    .acao {
+        padding: 4px 10px;
+    }
+
+    .noticia img {
+        width: 100px;
+        height: 50px;
+        justify-content: center;
+    }
+
+
+    .conteudo h2 {
+        font-size: 0.7rem;
+    }
+
+    .data {
+        font-size: 0.58rem;
+    }
+
+    .botttao {
+        font-size: 0.5rem;
+        padding: 3px 5px;
+
+    }
+
+    .rodape-conteudo {
+       justify-content: center;
+      }
+
+      .logo-area img {
+        height: 40px;
+        width: 40px;
+        
+      }
+
+      .logo-area h3 {
+        font-size: 0.6rem;
+
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    padding: 5px;
+
+}
 }

@@ -22,13 +22,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
   color: var(--black);
   line-height: 1.7;
   background-color: var(--white);
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -111,25 +111,6 @@ nav a:hover {
 
 nav a.ativo {
     color: var(--ciano);
-}
-
-/*itens menu*/
-.navbar_links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-}
-
-.navbar_links a{
-    color: var(--black);
-    font-weight: 600;
-    font-size: 1rem;
-    transition: 0.3s;
-}
-
-.navbar_links a:hover{
-    color: var(--seconday-color);
-    border-bottom: 2px solid var(--nav);
 }
 
 .actions {
@@ -363,13 +344,10 @@ hr {
 /* ====== 1440px ====== */
 @media (max-width: 1440px) {
     header {
-        padding: 10px 90px !important;
+        padding: 10px 40px !important;
         gap: 10px !important;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 5px 10px;
     }
+
     nav {
         display: flex;
         list-style: none;
@@ -380,15 +358,15 @@ hr {
     .logo img {
     width: 50px !important;
     height: 50px !important;
-}
+    }
 
-.actions input {
-    gap: 10px !important;
-}
+    .actions input {
+        gap: 10px !important;
+    }
 
-.language-selector {
-    padding: 2px 4px !important;
-}
+    .language-selector {
+        padding: 2px 4px !important;
+    }
 
 /* Hero */
 .hero img {
@@ -437,11 +415,8 @@ hr {
 header {
     padding: 10px 40px !important;
     gap: 10px !important;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 10px;
 }
+
 nav {
     display: flex;
     list-style: none;
@@ -454,14 +429,8 @@ nav {
 @media (max-width: 1024px) {
 
 header {
-    padding: 5px 5px;
+    padding: 10px 20px !important;
     gap: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    line-height: 1.2;
-    transform: none !important;
 }
 
 .logo {
@@ -477,20 +446,10 @@ header {
     list-style: none;
 }
 
+
 .navbar_toggle {
     display: block;
-    font-size: 2rem;
-    color: var(--white);
-    background: transparent;
-    align-items: center;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
     margin-top: 7px;
-}
-
-.navbar_toggle ion-icon:hover {
-    color: var(--ciano);
 }
 
 .hero-text {
@@ -530,6 +489,10 @@ header {
 }
 
 @media (max-width: 768px) {
+    header {
+        padding: 10px 10px !important;
+    }
+
     .hero-text {
         font-size: 1rem;
     }
@@ -540,32 +503,37 @@ header {
       }
       
       .content p {
-        margin-bottom: 1.1rem;
+        font-size: 0.8rem;
       }
       
       .content .author {
         font-size: 1rem;
       }
       
-      .content hr {
-      }
-      
       blockquote {
-        border-left: 2px solid darkred;
-        padding-left: 10px;
         margin: 15px 0;
+        font-size: 0.8rem
       }
 }
 
 @media (max-width: 480px) {
+    header {
+        padding: 1px 10px !important;
+    }
+
+    .language-selector {
+        width: 95px;
+        height: 25px;
+    }
+
+    .lang-icon {
+        font-size: 1rem;
+    }
+
     .hero img {
         width: 100%;
         height: 100%;
         justify-content: center;
-    }
-
-    .actions {
-       padding: 0;
     }
 
     .actions input {
@@ -573,18 +541,18 @@ header {
     }
 
     .doar {
-        display: none;
+       padding: 5px 25px;
     }
 
     #mobileMenu {
-       margin-right: 45px;
+        top: 100px;
+        right: 5px;
        font-size: 0.7rem;
        width: 200px;
     }
 
     .hero-text {
         font-size: 0.7rem;
-        margin-right: 20px;
     }
 
     .content {
@@ -601,7 +569,6 @@ header {
       }
       
       blockquote {
-        border-left: 2px solid darkred;
         padding-left: 10px;
         margin: 10px 0;
       }
@@ -628,10 +595,27 @@ header {
 }
 
 @media (max-width: 390px) {
-.hero-text {
-    font-size: 0.5rem;
-}
-.content p {
-    font-size: 0.8rem;
-}
+    header {
+        padding: 1px 5px !important;
+    }
+
+    .doar {
+        padding: 5px 20px;
+    }
+
+    #mobileMenu {
+        top: 100px;
+        right: 5px;
+       font-size: 0.6rem;
+       width: 150px;
+       height: 250px;
+    }
+
+    .hero-text {
+        font-size: 0.5rem;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+    }
 }
