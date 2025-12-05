@@ -53,12 +53,13 @@ body {
     top: 85px;
     right: 20px;
     width: 240px;
-    background: var(--white);
+    background: var(--nav);
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     padding: 1.2rem 1rem;
     opacity: 0;
     transform: translateY(-15px);
+    z-index: 10;
 }
 
 #mobileMenu li {
@@ -569,3 +570,310 @@ hr {
     transform: scale(1.1);
 }
 
+@media (max-width: 1280px) {
+   .overlay {
+    margin-bottom: 60px;
+   }
+}
+
+@media (max-width: 1024px) {
+    
+header {
+    padding: 3px 10px !important;
+    gap: 10px;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.logo img {
+    height: 35px;
+    width: 35px;
+}
+
+.navbar {
+    display: none;
+    list-style: none;
+}
+
+.navbar_toggle {
+    display: block;
+    color: var(--white);
+    margin-top: 7px;
+}
+
+#mobileMenu {
+    top: 75px;
+    right: 10px;
+}
+
+.overlay {
+    width: 80%;
+}
+
+
+.rodape {
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.logo-area img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.logo-area h3 {
+    font-size: 0.9em;
+}
+
+.links-centro ul,
+.links-direita ul {
+    padding: 10px;
+}
+
+.links-centro a,
+.links-direita a {
+    font-size: 0.88em;
+}
+
+.redes-sociais {
+    gap: 10px;
+}
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 10px !important;
+    }
+
+    
+#mobileMenu {
+    top: 85px;
+    right: 5px;
+   font-size: 1rem;
+   width: 200px;
+}
+
+    .input-group input {
+       margin-left: 30px;
+    }
+
+    .input-group {
+        margin-right: 20px;
+    }
+
+    .actions .icons {
+        height: 25px;
+    }
+
+    .post-box img {
+        height: 60px;
+    }
+
+    textarea {
+        width: 230px;
+       margin-left: 10px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+
+header {
+    padding: 1px 10px !important;
+}
+
+.language-selector {
+    width: 95px;
+    height: 25px;
+}
+
+.lang-icon {
+    font-size: 1rem;
+}
+
+
+.actions input {
+    display: none;
+}
+
+.doar {
+   padding: 5px 25px;
+}
+
+#mobileMenu {
+    top: 70px;
+    right: 5px;
+   font-size: 0.7rem;
+   width: 200px;
+}
+
+.banner {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+  
+.overlay {
+      width: 360px;
+      height: 225px;
+      padding-top: 300px;
+}
+
+.search-box {
+    padding: 5px 5px;
+    width: 70%;
+    height: 65px;
+ }
+
+ .input-group {
+    margin-bottom: 40px;
+ }
+   
+ .input-group input {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+ }
+   
+ .input-group .button  {
+     padding: 7px 17px;
+     margin-bottom: 10px;
+ }
+ 
+ .input-group img {
+     height: 15px;
+     width: 15px;
+ 
+ }
+ 
+ .box-foot {
+     padding: 20px;
+     width: 50%;
+     height: 65px;
+    
+ }
+ 
+ .foot p {
+    font-size: 0.7rem;
+ }
+   
+ .post-box {
+    width: 550px;
+    height: 190px;
+ }
+
+ .post-box img {
+    height: 35px;
+ }
+
+ .actions .icons img{
+    height: 20px;
+    width: 20px;
+ }
+
+ .comentario p {
+    font-size:  0.7rem;
+ }
+
+ .btn-answer {
+    font-size: 0.7rem;
+    width: 70px;
+ }
+
+ .card {
+    width: 120px;
+    height: 160px;
+ }
+
+  .rodape-conteudo {
+   justify-content: center;
+  }
+
+  .logo-area img {
+    height: 40px;
+    width: 40px;
+    
+  }
+
+  .logo-area h3 {
+    font-size: 0.8rem;
+  }
+
+  
+.links-centro ul,
+.links-direita ul {
+       display: none;
+}
+}
+
+@media (max-width: 390px) {
+    header {
+        padding: 1px 5px !important;
+    }
+
+    .lang-icon {
+        font-size: 1rem;
+    } 
+
+    .doar {
+        padding: 5px 20px;
+    }
+
+    #mobileMenu {
+        top: 65px;
+        right: 5px;
+       font-size: 0.6rem;
+       width: 150px;
+       height: 250px;
+    }
+
+    .box-foot p {
+        font-size: 10px;
+    }
+
+    .card {
+        width: 100px;
+        height: 150px;
+    }
+
+    .card h3 {
+        font-size: 0.9rem;
+    }
+
+    .usuario {
+        font-size: 0.5rem;
+    }
+
+    .rodape-conteudo {
+        justify-content: center;
+       }
+ 
+       .logo-area img {
+         height: 40px;
+         width: 40px;
+         
+       }
+ 
+       .logo-area h3 {
+         font-size: 0.6rem;
+ 
+ }
+ 
+ hr {
+     margin-top: 5px;
+ }
+ 
+ .redes-sociais img {
+     width: 30px;
+     height: 30px;
+     background-color: var(--white);
+     padding: 5px;
+ 
+ }
+}

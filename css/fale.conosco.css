@@ -54,12 +54,13 @@ header {
     top: 85px;
     right: 20px;
     width: 240px;
-    background: var(--white);
+    background: var(--nav);
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     padding: 1.2rem 1rem;
     opacity: 0;
     transform: translateY(-15px);
+    z-index: 10;
 }
 
 #mobileMenu li {
@@ -418,6 +419,13 @@ header {
         padding: 10px 10px !important;
     }
 
+    #mobileMenu {
+        top: 85px;
+        right: 5px;
+       font-size: 1rem;
+       width: 200px;
+    }
+
     .faleconosco p {
         font-size: 0.9rem;
     }
@@ -451,7 +459,7 @@ header {
     }
 
     #mobileMenu {
-        top: 100px;
+        top: 65px;
         right: 5px;
        font-size: 0.7rem;
        width: 200px;
@@ -517,7 +525,7 @@ header {
     }
 
     #mobileMenu {
-        top: 100px;
+        top: 65px;
         right: 5px;
        font-size: 0.6rem;
        width: 150px;

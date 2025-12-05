@@ -449,7 +449,14 @@ header {
 
 .navbar_toggle {
     display: block;
+    color: var(--white);
     margin-top: 7px;
+}
+
+
+#mobileMenu {
+    top: 105px;
+    right: 10px;
 }
 
 .hero-text {
@@ -545,10 +552,11 @@ header {
     }
 
     #mobileMenu {
-        top: 100px;
+        top: 85px;
         right: 5px;
        font-size: 0.7rem;
-       width: 200px;
+       width: 150px;
+       height: 285px;
     }
 
     .hero-text {

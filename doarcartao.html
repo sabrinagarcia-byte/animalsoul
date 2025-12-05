@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doar</title>
+    <link rel="stylesheet" href="css/doarcartao.css" />
+    <link rel="shortcut icon" href="img/favicon_io (2)/favicon-32x32.png" type="image/x-i">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="Logo Pinguim"></a>
+    </div>
+      <nav>
+        <ul class="navbar">
+            <li><a href="index.html" class="ativo">Página inicial</a></li>
+            <li><a href="animais.em.destaque.html">Animais em destaque</a></li>
+            <li><a href="sobre.nos.html">Sobre nós</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li><a href="fale.conosco.html">Fale conosco</a></li>
+        </ul>
+
+        <!-- MENU MOBILE -->
+        <ul class="navbar" id="mobileMenu">
+            <li><a href="index.html" class="ativo">Página inicial</a></li>
+            <li><a href="animais.em.destaque.html">Animais em destaque</a></li>
+            <li><a href="sobre.nos.html">Sobre nós</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li><a href="fale.conosco.html">Fale conosco</a></li>
+        </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar"/>
+      <!-- Seletor de idioma -->
+      <div class="language-selector">
+        <ion-icon name="globe-outline" class="lang-icon"></ion-icon>
+        <select class="lang-select" onchange="location = this.value;">
+          <option value="doar.html" selected>BR</option>
+          <option value="doar-en.html">EN</option>
+          <option value="doar-es.html">ES</option>
+          <option value="doar-fr.html">FR</option>
+        </select>
+      </div>
+      <!--Botão mobile-->
+      <button class="navbar_toggle" aria-label="menu mobile">
+          <ion-icon name="menu-outline"></ion-icon>
+      </button>
+      
+  </div>
+</header>
+
+    <main>
+      <div class="container">
+        <div class="image">
+          <img src="img/pinguin.png" alt="Pinguins na praia" />
+        </div>
+
+        <div class="form-box">
+          <h2>Faça parte da mudança na vida<br>de muitas espécies</h2>
+          </div>
+
+      <div class="fundo-escuro"></div>
+      <div class="caixa-do-boleto">
+
+            
+            <p class="concluido"> Operação concluída com sucesso!  </p>
+            <img src="img/check.png" class="check">
+            <button onclick="window.location.href='index.html'"><img src="img/FECHAR.png" class="fechar"></button>
+            <p class="mensagem">O pagamento do seu cartão já foi confirmado. Por favor aguarde
+enquanto nosso sistema processa sua cobrança!</p>
+      </div>
+</main>
+  </body>
+</html>

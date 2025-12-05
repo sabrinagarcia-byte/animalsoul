@@ -548,6 +548,21 @@ hr {
     transform: scale(1.1);
 }
 
+/*====== 1440px ======*/
+@media (max-width: 1440px) {
+    .dados {
+        margin-top: -40px;
+    }
+
+    .container {
+        margin-top: -80px;
+    }
+
+    .noticias-container {
+        margin-top: -90px;
+    }
+}
+
 
 /* ======= 1280px =======*/
 @media (max-width: 1280px) {
@@ -560,6 +575,10 @@ nav {
     list-style: none;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+.dados {
+    margin-top: -40px;
 }
 }
 
@@ -600,6 +619,7 @@ header {
 /* ---------- DADOS SECTION ---------- */
 .dados {
     padding: 20px 30px;
+    margin-top: -40px;
 }
 
 .categorias {
@@ -685,6 +705,10 @@ header {
     padding: 3px 7px;
 }
 
+.dados {
+    margin-top: -50px;
+}
+
 }
 
 
@@ -712,7 +736,7 @@ header {
     }
 
     #mobileMenu {
-        top: 100px;
+        top: 65px;
         right: 5px;
        font-size: 0.7rem;
        width: 200px;
@@ -753,6 +777,10 @@ header {
         font-size: 1.5rem;
     }
 
+    .container {
+        margin-top: -300px;
+    }
+
     .autor {
         font-size: 0.75rem;
     }
@@ -771,6 +799,10 @@ header {
         font-size: 0.8rem;
     }
 
+    .noticias-container {
+        margin-top: -320px;
+    }
+
     .noticia {
         padding: 10px;
         margin-bottom: 10px;
@@ -782,6 +814,10 @@ header {
 
     .conteudo h2 {
         font-size: 0.9rem;
+    }
+
+    .dados {
+        margin-top: -50px;
     }
 }
 
@@ -800,7 +836,7 @@ header {
     }
 
     #mobileMenu {
-        top: 100px;
+        top: 65px;
         right: 5px;
        font-size: 0.6rem;
        width: 150px;
@@ -870,6 +906,10 @@ margin-bottom: 10px;
       .logo-area h3 {
         font-size: 0.6rem;
 
+}
+
+hr {
+    margin-top: 5px;
 }
 
 .redes-sociais img {
